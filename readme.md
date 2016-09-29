@@ -149,3 +149,4 @@ If you're building a backend for [Relay](http://facebook.github.io/relay/), you'
   - Put guide titles into the `<title />`
 - Document encrypted & versioned cursors
 - Eager load `Schema#types` after `.define { ... }`
+- Support `root_object` in mutation resolves

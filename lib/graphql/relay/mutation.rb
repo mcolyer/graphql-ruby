@@ -75,7 +75,7 @@ module GraphQL
         @field ||= begin
           ensure_defined
           relay_mutation = self
-          field_resolve_proc = -> (obj, args, ctx){
+          field_resolve_proc = -> (obj, args, ctx) {
             results_hash = @resolve_proc.call(args[:input], ctx)
             Result.new(arguments: args, result: results_hash)
           }
